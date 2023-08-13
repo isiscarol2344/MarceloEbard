@@ -45,7 +45,7 @@ window.addEventListener('load', async () => {
 });
 
 async function generatePDF( nombre, municipio,direccion, telefono, redes  ) {
-    const image = await loadImage("morena.jpg");
+    const image = await loadImage("formulario.png");
     const signatureImage = signaturePad.toDataURL();
 
     const pdf = new jsPDF('p', 'pt', 'letter');
